@@ -1,0 +1,84 @@
+body {
+    background: #edd7ff;
+    font-size: 1.5em;
+    max-width: 30%;
+    min-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+h1,h2,h3{
+    color:#aa51f3;
+}
+figcaption{
+    color: blue;
+}
+
+/*Tabs*/
+.container {
+    margin: 50px;
+}
+.tabs > ul {
+    padding: 0;
+}
+.tabs .trigger {
+    cursor: pointer;
+    list-style-type: none;
+    background: #97899e;
+    padding: 10px 10px;   
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.tabs .trigger.active {
+    background: #aa51f3;
+    color: #ffffff;
+}
+.tabs .content{
+    display: none;
+    background: #ffffff;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+.tabs .content.active {
+    display: block;
+}
+.small{
+    font-size: small;
+}
+
+/*number guessing game*/
+.result{
+    padding: 3px;
+    font-size: xx-large;
+}
+.prevTooBig{
+    color:red;
+}
+.tooBig{
+    background-color: pink;
+    color: blue;
+}
+.prevTooSmall{
+    color: blue;
+}
+.tooSmall{
+    background-color: lightblue;
+    color: blue;
+}
+.tooMany{
+    background-color: red;
+    color: black;
+}
+.justRight{
+    background-color: lightgreen;
+    color:green;
+}
+
+/*coin tossing game*/
+.hidden{
+    display: none;
+}
+button{
+    font-size: large;
+}
