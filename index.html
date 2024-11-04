@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Games In One!</title>
+    <link rel="stylesheet" href="tabs.css">
+</head>
+<body>
+    <h1>Lilly Williams</h1>
+    <h1>Shall we play a game?</h1>
+    <div class="tabs">
+        <!--Tabs Index-->
+        <ul>
+            <li class="trigger" data-target="#guessing-game">Number Gussing Game</li>
+            <li class="trigger" data-target="#coin">Coin Toss Game</li>
+        </ul>
+        <!--Tabs-->
+        <div id="guessing-game"class="content">
+            <h3>Number Guessing Game</h3>
+            <p>I have selected a random number between 1 and 100. <br> I will give you 10 guesses to find what it is... <br> If you get it wrong, I'll tell you if you're too high or too low. Good luck!</p>
+            <form class="guessForm">
+                <label>Enter A Guess:<input type="text" id="guess"></label>
+            </form>
+            <p class="prevGuess"></p>
+            <p class="result"></p>
+        </div>
+        <div id="coin"class="content">
+            <h3>Coin Toss Game</h3>
+            <div class="choices">
+            <strong>Pick a side:</strong><br>
+            <button id="heads">Heads</button> 
+            <button id="tails">Tails</button><br><br>
+            </div>
+            <img id="coin-result" src="img/bothCoin.jpg">
+            <div id="coin-comment"></div>
+        </div>
+
+    <script src="scripts/tabs.js"></script>
+    <script src="scripts/coin.js"></script>
+    <script src="scripts/numberGuessingGame.js"></script>
+</body>
+</html>
